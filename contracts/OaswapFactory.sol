@@ -5,7 +5,7 @@ pragma solidity =0.5.16;
 import './interfaces/IOaswapFactory.sol';
 import './OaswapPair.sol';
 
-contract OaswapFactory is IOaswapFactory {
+contract OASFactory is IOaswapFactory {
     bytes32 public constant INIT_CODE_PAIR_HASH = keccak256(abi.encodePacked(type(OaswapPair).creationCode));
 
     address public feeTo;
